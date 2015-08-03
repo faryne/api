@@ -2,7 +2,7 @@
 
 ## 根據其他使用者已經設定的 SQL 查詢
 | HTTP Verb | URL |
-|-|-|
+|-------------|-------------|
 | GET | http://api.maid.im/galgame/erogamescape_api_by_id/{id} |
 
 以下是一個成功執行的回傳結果
@@ -123,7 +123,7 @@ GET   http://api.maid.im/galgame/erogamescape_api_by_id/1693
 
 ## 以自己想查的 SQL 進行查詢
 | HTTP Verb | URL |
-|-|-|
+|-------------|-------------|
 | POST| http://api.maid.im/galgame/erogamescape_api_by_sql |
 | **所需參數** | **參數內容值說明** |
 | sql | 自訂的 SQL，請參閱[說明](http://erogamescape.dyndns.org/~ap2/ero/toukei_kaiseki/sql_for_erogamer_index.php) |
