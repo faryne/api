@@ -20,7 +20,7 @@ HTTP Verb: __GET__
 |min_height|integer|v|v|圖片最小高度|
 |max_height|integer|v|v|圖片最大高度|
 |tag|string|v|v|關鍵字|
-|rating|enum|v||分級，僅接受 **all**（所有圖片）、**everyone**（僅非R-18）及 **adult**（僅R-18）|
+|rating|enum|v||分級，僅接受 **all**（所有圖片）、**everyone**（僅非R-18）及 **adult**（僅R-18），預設是 all|
 
 ### 網站列表
 
@@ -42,3 +42,26 @@ HTTP Verb: __GET__
 
 #### Header
 |欄位名稱|欄位說明|
+|-----|-----|
+|num|本次共查到 N 筆|
+|start|列出的資料起點|
+|perpage|每頁列出幾筆，固定為30|
+
+#### Artwork
+如未說明，基本上兩個群組的資料都會有該元素
+|欄位名稱|欄位說明|
+|site|所屬網站|
+|author_id|創作者ID，只有群組 A 才會有此元素|
+|id|作品 ID|
+|title|作品標題|
+|thumbnail|縮圖|
+|r_18|分級，只有群組 A 才有此項目。true 為 R-18，false 為普遍級|
+|original_url|該作品的原網址|
+|page_url|在 **難以名狀的抓圖器** 的網址|
+|photos|該作品的圖片資訊，為一個陣列，每個元素又有 **photo** （圖片網址，群組 B 不會有這個資料）、**width** （圖片寬度）及 **height** （圖片高度） |
+|tags|該作品的標籤，為一個陣列|
+
+#### Tags 
+|欄位名稱|欄位說明|
+|tag|標籤文字內容|
+|cnt|該標籤的數量|
