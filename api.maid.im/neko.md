@@ -3,7 +3,7 @@
 
 ## 搜尋圖片
 
-URL: __https://api.maid.im/neko__
+URL: __http://api.maid.im/neko__
 
 HTTP Verb: __GET__
 
